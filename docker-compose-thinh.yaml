@@ -7,9 +7,9 @@ services:
     tty: true
     restart: unless-stopped
     image: ollama/ollama:latest
-    devices:
-      - /dev/kfd:/dev/kfd
-      - /dev/dri:/dev/dri
+#    devices:
+#      - /dev/kfd:/dev/kfd
+#      - /dev/dri:/dev/dri
     environment:
       - 'HSA_OVERRIDE_GFX_VERSION=${HSA_OVERRIDE_GFX_VERSION-11.0.0}'
 
